@@ -1,0 +1,24 @@
+{
+  "name": "thinkkoa-application",
+  "description": "application created by thinkkoa",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npm run eslint",
+    "start": "supervisor -w app -q index",
+    "eslint": "eslint app"
+  },
+  "engines": {
+    "node": ">8.0.0"
+  },
+  "dependencies": {
+    "think_view": "^2.0.1",
+    "thinkkoa": "^2.x.x"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0",
+    "supervisor": "^0.12.0"
+  }
+}

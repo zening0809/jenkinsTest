@@ -1,0 +1,19 @@
+//use pm2 start app
+//pm2 startOrGracefulReload pm2.json
+{
+  "apps": [{
+    "name": "jenkinsTes",
+    "script": "index.js",
+    "cwd": "jenkinsTes/",
+    "max_memory_restart": "300M",
+    "instances"  : 2,
+    "exec_mode"  : "cluster",
+    "autorestart": true,
+    "max_restarts": 10,
+    "node_args": "",
+    "args": [],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
